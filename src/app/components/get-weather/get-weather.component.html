@@ -1,0 +1,18 @@
+<form action="submit" (ngSubmit)="getWeather()">
+    <input type="text" placeholder="insert a zipcode..." [(ngModel)]="zipcode" name="weather">
+    <button type="submit">get weather</button>
+</form>
+
+<h1>{{ temp.main.temp }}</h1>
+<table>
+    <th>City</th>
+    <th>temperature</th>
+    <th>feels like</th> <br>
+    <tbody>
+    <td>{{ temp.name }}</td>       
+    <td>{{ temp.main.temp }}</td>
+    <td>{{ temp.main.feels_like }}</td>
+</tbody>
+    
+</table>
+
